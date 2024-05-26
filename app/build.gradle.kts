@@ -53,6 +53,10 @@ android {
 
 dependencies {
 
+    // Dagger - Hilt
+    implementation ("com.google.dagger:hilt-android:2.49")
+    kapt ("com.google.dagger:hilt-android-compiler:2.49")
+
     // Navigation
     implementation(libs.androidx.navigation.compose)
 
@@ -61,11 +65,6 @@ dependencies {
     kapt("androidx.room:room-compiler:2.6.1")
     implementation(libs.androidx.room.paging)
 
-    // Dagger - Hilt
-    implementation(libs.hilt.android)
-    kapt(libs.hilt.compiler)
-    kapt(libs.androidx.hilt.compiler)
-    implementation(libs.androidx.hilt.navigation.compose)
 
     // Retrofit
     implementation(libs.retrofit)
